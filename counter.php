@@ -17,3 +17,34 @@ $hits++;
 // Save the updated count back to the file
 file_put_contents($counterFile, $hits);
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Hit Counter</title>
+    <style>
+        /* Style for the hit counter */
+        .hit-counter {
+            font-size: 24px;
+            color: white;
+            background-color: green;
+            padding: 10px;
+            border-radius: 5px;
+            width: fit-content;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to My Website!</h1>
+    <p>Here is a simple green hit counter below:</p>
+    
+    <div id="counter" class="hit-counter">
+        <?php echo "Hits: " . $hits; ?>
+    </div>
+
+</body>
+</html>
