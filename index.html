@@ -63,48 +63,15 @@
     <p>Castlevania: Anniversary Collection (2019).</p>
     <p>Super Mario Party Jamboree (2024).</p>
     <p>Super Mario 3D World + Bowser's Fury (2021).</p>
-</body>
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Hit Counter</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #e0f7e0;
-            text-align: center;
-            padding: 50px;
-        }
-        .counter {
-            background-color: #4caf50;
-            color: white;
-            padding: 20px;
-            font-size: 2em;
-            border-radius: 10px;
-            display: inline-block;
-        }
-    </style>
-</head>
-<body>
-    <h1>Welcome to My Website!</h1>
-    <p>Thanks for visiting. Here's how many times this page has been visited:</p>
-    <div class="counter" id="hitCounter">
-        0
-    </div>
-
-    <script>
-        // Simple counter using localStorage to simulate hit counter
-        if (localStorage.getItem("pageVisits")) {
-            let visits = parseInt(localStorage.getItem("pageVisits"));
-            visits++;
-            localStorage.setItem("pageVisits", visits);
-            document.getElementById("hitCounter").textContent = visits;
-        } else {
-            localStorage.setItem("pageVisits", 1);
-            document.getElementById("hitCounter").textContent = 1;
-        }
-    </script>
+    // Simple counter using localStorage to simulate hit counter
+if (localStorage.getItem("pageVisits")) {
+    let visits = parseInt(localStorage.getItem("pageVisits"));
+    visits++;
+    localStorage.setItem("pageVisits", visits);
+    document.getElementById("hitCounter").textContent = visits;
+} else {
+    localStorage.setItem("pageVisits", 1);
+    document.getElementById("hitCounter").textContent = 1;
+}
 </body>
 </html>
