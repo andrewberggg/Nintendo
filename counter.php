@@ -1,4 +1,6 @@
 <?php
+// PHP code to handle the hit counter logic
+
 // Path to the file that stores the hit count
 $counterFile = 'counter.txt';
 
@@ -25,7 +27,7 @@ file_put_contents($counterFile, $hits);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Hit Counter</title>
     <style>
-        /* Style for the hit counter */
+        /* CSS Style for the hit counter */
         .hit-counter {
             font-size: 24px;
             color: white;
@@ -42,6 +44,7 @@ file_put_contents($counterFile, $hits);
     <h1>Welcome to My Website!</h1>
     <p>Here is a simple green hit counter below:</p>
     
+    <!-- Display the current hit count -->
     <div id="counter" class="hit-counter">
         <?php echo "Hits: " . $hits; ?>
     </div>
