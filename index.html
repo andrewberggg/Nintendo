@@ -63,15 +63,5 @@
     <p>Castlevania: Anniversary Collection (2019).</p>
     <p>Super Mario Party Jamboree (2024).</p>
     <p>Super Mario 3D World + Bowser's Fury (2021).</p>
-// Simple counter using localStorage to simulate hit counter
-<if> (localStorage.getItem("pageVisits")) {
-    let visits = parseInt(localStorage.getItem("pageVisits"));
-    visits++;
-    localStorage.setItem("pageVisits", visits);
-    document.getElementById("hitCounter").textContent = visits;
-} </else> {
-    localStorage.setItem("pageVisits", 1);
-    document.getElementById("hitCounter").textContent = 1;
-}
 </body>
 </html>
